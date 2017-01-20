@@ -1,0 +1,25 @@
+{% extends 'playbase.html' %}
+{% block info %}
+<h1 align="center" style="color:white">
+	{{ title }}
+</h1>
+{% end %}
+{% block play %}
+  <video
+    style="margin:auto"
+    id="my-player"
+    class="video-js vjs-big-play-centered"
+    controls
+    preload="auto"
+    data-setup='{}'
+    autoplay>
+  <source src="/videos/{{ video_file }}" type="video/mp4"></source>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a
+    web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">
+      supports HTML5 video
+    </a>
+  </p>
+</video>
+{% end %}

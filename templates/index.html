@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block info %}
+<h1 align="center" style="color:white">{{ info }}</h1>
+{% end %}
+{% block play %}
+{% for i in range(video_files_number) %}
+    <h3 style="margin-left:100px;color:white"><a href="/video/{{ video_files[i] }}" style="text-decoration: none"> {{ i+1 }}. {{ video_files[i] }} </a></h3>
+{% end %}
+{% end %}
