@@ -1,3 +1,6 @@
+#!/usr/bin/env python 
+# -*- coding=utf-8 -*-
+
 import tornado.web
 import tornado.ioloop
 import os
@@ -36,5 +39,5 @@ if __name__ == '__main__':
 		template_path = os.path.join(os.path.dirname(__file__), "templates"),
 		debug=True
 		)
-	app.listen(8888)
+	app.listen(8000)
 	tornado.ioloop.IOLoop.current().start()
